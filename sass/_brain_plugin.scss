@@ -1,0 +1,57 @@
+@import url(https://fonts.googleapis.com/css?family=Cabin);
+@mixin size($width,$height){
+	width:$width;
+	height:$height;}
+
+//elimeted bug
+
+/*建立一個clearfix的mixin*/
+@mixin pie-clearfix {
+  &:after, &:before {
+    content: "";
+    display: table;
+  }
+  &:after{
+    clear:both;
+  }
+  *zoom:1;
+}
+// defualt css
+$font-family: \5FAE\8EDF\6B63\9ED1\9AD4,Microsoft jhengHei,MingLiU,sans-serif;
+$font-family2:arial, "Microsoft YaHei", "微软雅黑", PMingLiU, "新細明體";
+*{
+  position: relative;
+  box-sizing:border-box;
+  font-family: $font-family2;
+}
+html{
+  font-size: 75%;
+}
+
+// bootstrap
+$sm:768px;
+$md:992px;
+$lg:1200px;
+
+@mixin box-vertical-align{
+&::before{
+   content:'';
+   width:0;
+   height:100%;
+   display:inline-block;
+   position:relative;
+   vertical-align:middle;
+   background:#f00;
+ }
+}
+@mixin keyframes($animation-name) {
+  @-webkit-keyframes $animation-name {
+    @content;
+  }
+  @-moz-keyframes $animation-name {
+    @content;
+  }
+  @keyframes $animation-name {
+    @content;
+  }
+}

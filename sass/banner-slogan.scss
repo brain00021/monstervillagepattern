@@ -1,0 +1,26 @@
+.slogan {
+	@include size(100%,337px);
+    position: absolute;
+    z-index: 50;
+    bottom: 0;
+    @include pie-clearfix;
+    .slogan-moscot {
+    	float:right;
+        @include size(100%, 337px);
+        max-width: 613px;
+        background: url(../image/monster-icon.png) no-repeat bottom left;
+        background-size: 100%;
+    }
+    .slogan-icon{
+    	@include size(100%,150px);
+    	max-width:300px;
+    	float: left;
+    	position: absolute;
+    	bottom: 0;
+    	z-index: 51;
+    	
+
+    	background: url(../image/e-gate.svg) no-repeat top left;
+
+    }
+}

@@ -1,0 +1,27 @@
+@import 'brain_plugin';
+@import 'banner-slogan';
+@import 'nav-btn';
+@import 'lightbox';
+.container-fulid {
+    background: #fcf1e8;
+}
+
+.full-screen {
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+#nav-icon1{
+    position: absolute;
+    top:0;
+    left:0;
+    z-index: 90;
+    margin:15px;
+    background:#fff;
+    // padding:10px;
+    @include size(80px,80px);
+    border-radius: 50%;
+}
+
+

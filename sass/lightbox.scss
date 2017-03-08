@@ -1,0 +1,57 @@
+$light-button-color:#000;
+$light-button-hover-color:#b80000;
+#light-box {
+    position: fixed;
+    @include size(100%, 100%);
+    top: 0;
+    left: 0;
+    z-index: 50;
+    background: rgba(#000, .8);
+    overflow-y:scroll;
+    display: none;
+
+    #profile-collect {
+    background:none;   
+        position: absolute;
+        // overflow: scroll;
+        height: 90vh;
+        // height: auto;
+        max-height: auto;
+        margin: auto;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+    .row{
+        background: rgba(#fff,0.5);
+    }
+     .button2{
+        margin:10px auto 10px auto;
+        border: 2px solid #000;
+        cursor:pointer;
+        .button-img{
+            background: #e9e9e9;
+        }
+        &:hover{
+            border:5px solid $light-button-hover-color;
+        }
+     }
+    }
+}
+
+#wrap-lightbox{
+    height: auto;
+    border-bottom:12px solid rgba(#04475b,1);
+    .lightbox-button{
+        text-align: center;
+        margin: 20px auto;
+    }
+    .button-img{
+        overflow: hidden;
+        margin: 20px auto;
+        img{width:100%;}
+    }
+    .btn{
+        margin:5px;
+    }
+}

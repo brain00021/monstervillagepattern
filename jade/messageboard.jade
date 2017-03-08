@@ -1,0 +1,17 @@
+include ./head.jade
+body
+ .container
+  .row
+   .col-xs-8
+     form.form
+      input#inputName.form-control(type='text',placeholder='name',required='',autofocus='')
+      input#inputEmail.form-control(type='email',placeholder='email',required='',autofocus='')
+      input#inputUrl.form-control(type='text',placeholder='http://',required='',autofocus='')
+      input#inputTitle.form-control(type='text',placeholder='aritcle-title',required='',autofocus='')
+      textarea#message(style='width:100%',rows='10')
+      button.btn.btn-lg.btn-primary.btn-block(type='sumbit') 送出
+ .row
+  .col-xs-8.col-xs-offset-2
+   h3 留言內容
+   .result 這邊寫
+  script(type='text/javascript' src='js/ajaxtest.js')
